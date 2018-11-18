@@ -1,0 +1,16 @@
+---
+
+http-server:
+  ensure-deployer-origin: false
+
+observability:
+  logger:
+    formatter: "console"
+    verbosity: "debug"
+  monitor:
+    enabled: true
+  tracer:
+    enabled: true
+    zipkin-url: "http://zipkin:9411/api/v2/spans"
+
+...

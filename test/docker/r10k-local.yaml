@@ -1,0 +1,10 @@
+---
+
+:cachedir: "/etc/puppetlabs/r10k/cache"
+
+:sources:
+  :local:
+    basedir: "/etc/puppetlabs/code/environment"
+    remote: "file:///opt/puppetsources"
+
+...

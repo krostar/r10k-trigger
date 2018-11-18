@@ -1,0 +1,17 @@
+# by default, everything is ignored
+/*
+
+# only de-ignore what we need
+# binaries and config
+!/build/bin/trigger-api
+!/configs/trigger-api/docker.yaml
+!/test/docker
+
+# sources
+!/cmd
+!/internal
+!/pkg
+!/scripts
+!/go.mod
+!/go.sum
+!/Makefile

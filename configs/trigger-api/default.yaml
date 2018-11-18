@@ -1,0 +1,10 @@
+---
+
+###
+# the following file contains default values for all configuration
+# you can overide only the parts you want to, for example
+# logger:
+#   verbosity: "debug"
+###
+
+...

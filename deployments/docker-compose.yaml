@@ -1,0 +1,26 @@
+---
+
+networks:
+  default:
+    name: "net-r10ktrigger"
+
+services:
+  trigger-api:
+    build:
+      context: ".."
+      dockerfile: "build/test-trigger-api.Dockerfile"
+    container_name: "trigger-api"
+    depends_on:
+      - "zipkin"
+    ports:
+      - "8080:8080/tcp"
+
+  zipkin:
+    container_name: "zipkin"
+    image: "openzipkin/zipkin"
+    ports:
+      - "9411:9411/tcp"
+
+version: "3.5"
+
+...
